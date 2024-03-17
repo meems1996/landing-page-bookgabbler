@@ -1,27 +1,101 @@
 .App {
   text-align: center;
+  background-color: white
 }
 
-.App-logo {
-  height: 40vmin;
+.whole-app {
+  height: 100vh;
+}
+
+.App-logos {
+  height: 60vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.isabella-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #9effff, #a0ffa0); /* Teal to lime gradient */
+  background: linear-gradient(to right, rgb(26, 18, 30), #a8b8ff);
+  color: black; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+  box-shadow: 0 4px 8px rgba(83, 246, 205, 0.801); /* Adjust the shadow values as needed */
+  transition: box-shadow 0.2s ease; /* Adding transition for smooth hover effect */
+}
+
+.gradient-button:hover {
+  box-shadow: 0 8px 16px rgba(69, 240, 226, 0.915); /* Adjust the shadow values as needed */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 40vh;
+  border-bottom-right-radius: 100px; /* Adjust the radius as needed */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(26, 18, 30);
   color: white;
+  padding-left: 100px;
+  padding-right: 200px;
+  margin-bottom: 40px;
+}
+
+.gradient-text {
+  background-color: #f3ec78;
+  margin-right: 10px;
+  background-image: linear-gradient(to right, #ffffb3, #85f585, #9addff, #d19fff, #ff92ca);;
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  /* Additional text styles */
+  font-size: 40px;
+  font-weight: bold;
+  /* Add vendor prefixes for broader browser support */
+}
+
+.gradient-text-subtitle {
+  background-color: #f3ec78;
+  margin-right: 10px;
+  background-image: linear-gradient(to right, #ffffb3, #85f585, #9addff, #d19fff, #ff92ca);;
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  /* Additional text styles */
+  font-size: 30px;
+  font-weight: bold;
+  /* Add vendor prefixes for broader browser support */
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 30px;
+  color: #ffedfa;
+  /* font-weight: bold; */
+}
+
+.subtitle-dark {
+  margin-top: 0;
+  font-size: 25px;
+  color: rgb(26, 18, 30);
+}
+
+.subtitle-dark-smaller {
+  margin-top: 0;
+  font-size: 20px;
+  color: rgb(26, 18, 30);
+}
+
+.subtitle-dark-bold {
+  margin-top: 0;
+  font-size: 20px;
+  color: rgb(26, 18, 30);
+  font-weight: bold;
 }
 
 .App-link {
@@ -35,4 +109,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.App-logo {
+  width: 40px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between logo and text */
+}
+
+.app-name {
+  margin: 0; /* Remove default margin */
+  color: white; /* Example text color */
+  font-size: 20px; /* Example font size */
+  font-weight: bold;
 }
