@@ -109,6 +109,11 @@ function App() {
         <p className="subtitle" style={{margin: '20px'}}>We are currently developing a very early version which will be made available to a select group of people. This version will be made free to people who are selected.</p>
       </div>
 
+      <div style={{width: '50%', borderRadius: '0px', height: '80%'}}>
+        <p className="gradient-text-subtitle" style={{fontSize: '25px', margin: '20px'}}>Our main goal with BookGabbler</p>
+        <p className="subtitle" style={{margin: '20px'}}>The main goal with BookGabbler is to provide the <b>best</b> space for readers to connect with one another in an online social space.</p>
+      </div>
+
     </div>
     </div>
   );
