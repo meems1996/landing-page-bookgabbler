@@ -98,11 +98,17 @@ function App() {
       </div>
     </div>
  
-    <div style={{height: '400px', width: '100%', display: 'flex', justifyContent:'center', alignItems: 'center', marginTop: '40px', backgroundColor:'rgb(26, 18, 30)' }}>
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center', marginTop: '40px', paddingTop: '40px', paddingBottom: '40px', backgroundColor:'rgb(26, 18, 30)' }}>
       <div style={{width: '50%', borderRadius: '0px', height: '80%'}}>
-        <p className="gradient-text-subtitle" style={{fontSize: '30px', margin: '20px'}}>Why BookGabbler</p>
+        <p className="gradient-text-subtitle" style={{fontSize: '25px', margin: '20px'}}>Why BookGabbler</p>
         <p className="subtitle" style={{margin: '20px'}}>We're building BookGabbler because people find solice and escapism in reading. There are absolutely no social platforms that tailor to readers that also include all the features we love from current popular social media apps. We will also be the first social media app to be paid by users, giving us the opportunity to be profitable.</p>
       </div>
+
+      <div style={{width: '50%', borderRadius: '0px', height: '80%'}}>
+        <p className="gradient-text-subtitle" style={{fontSize: '25px', margin: '20px'}}>Where are we with BookGabbler</p>
+        <p className="subtitle" style={{margin: '20px'}}>We are currently developing a very early version which will be made available to a select group of people. This version will be made free to people who are selected.</p>
+      </div>
+
     </div>
     </div>
   );
