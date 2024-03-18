@@ -69,9 +69,9 @@ function App() {
       </header>
     </div>
 
-    <div style={{height: '400px', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-      {/* two divs in a row */}
-      <div style={{ display: 'flex', height: '80%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #9effff6a, #a0ffa04b)', borderRadius: '70px', paddingRight: '10px', width: '70%'}}>
+    <div style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+      {/* first item div */}
+      <div style={{ display: 'flex', height: '300px', overflow: 'auto',  maxWidth: '30%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #9effff6a, #a0ffa04b)', borderRadius: '70px', paddingRight: '10px', minWidth: '400px', width: 'calc(50% - 20px)'}}>
       <div style={{marginLeft: '10px', marginRight: '10px', width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
       <span style={{display: 'flex', justifyContent:'center'}}><p className="subtitle-dark-bold" style={{fontSize: '20px'}}>Connect</p></span>
         <p className="subtitle-dark">Connect with readers from around the world. At first the application will only work in the US, but as we grow, we will become available to more people.</p>
@@ -79,7 +79,8 @@ function App() {
         <img src={messaging} style={{height:'50%'}} className="App-logos" alt="logo" />
       </div>
 
-      <div style={{ display: 'flex', height: '80%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #ffe2fc7e, #f4b6ff63)', borderRadius: '70px', paddingRight: '10px', width: '70%'}}>
+      {/* second item div */}
+      <div style={{ display: 'flex', height: '300px', maxWidth: '30%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #ffe2fc7e, #f4b6ff63)', borderRadius: '70px', paddingRight: '10px', minWidth: '400px', width: 'calc(50% - 20px)'}}>
       <div style={{marginLeft: '10px', marginRight: '10px', width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
       <span style={{display: 'flex', justifyContent:'center'}}><p className="subtitle-dark-bold" style={{fontSize: '20px'}}>Find new reads</p></span>
         <p className="subtitle-dark">Escape your bubble of what you think you want to read and find new books. Or find new books based on tropes. All recommendations are by readers for readers.</p>
@@ -87,16 +88,16 @@ function App() {
         <img src={readbook} style={{height:'50%'}} className="App-logos" alt="logo" />
       </div>
 
-      <div style={{display: 'flex', height: '80%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #fff9e270, #ffefb673)', borderRadius: '70px', paddingRight: '10px', width: '70%'}}>
+      {/* third item div */}
+      <div style={{display: 'flex', height: '300px', maxWidth: '30%', justifyContent:'flex-end', alignItems: 'center', margin: '10px', background: 'linear-gradient(to right, #fff9e270, #ffefb673)', borderRadius: '70px', paddingRight: '10px', minWidth: '400px', width: 'calc(50% - 20px)'}}>
         <div style={{marginLeft: '10px', marginRight: '10px', width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
           <span style={{display: 'flex', justifyContent:'center'}}><p className="subtitle-dark-bold" style={{fontSize: '20px'}}>Build a following</p></span>
           <p className="subtitle-dark"> Be able to build a following of fellow readers who connect with the books you love. Become an even stronger force as a book influencer. Showcase your readers books that are less known.</p>
         </div>
         <img src={readingtime} style={{height:'50%'}} className="App-logos" alt="logo" />
       </div>
-      <div></div>
     </div>
-
+ 
     <div style={{height: '400px', width: '100%', display: 'flex', justifyContent:'center', alignItems: 'center', marginTop: '40px', backgroundColor:'rgb(26, 18, 30)' }}>
       <div style={{width: '50%', borderRadius: '0px', height: '80%'}}>
         <p className="gradient-text-subtitle" style={{fontSize: '30px', margin: '20px'}}>Why BookGabbler</p>
